@@ -1,0 +1,59 @@
+
+.data{
+    display: flex;
+    margin: 3% 10% 10% 10%;
+}
+.todo{
+    width: 33.33%;
+    margin-right: 20px;
+    font-size: large;
+}
+.todoBody{
+    margin-top: 15px;
+    background-color: rgb(128, 182, 219);
+    height: 700%;
+    border: 5px solid rgb(128, 182, 219);
+}
+.addtodo{
+    background-color: rgb(222, 234, 241);
+    font-size: larger;
+}
+.inprogresBody{
+    margin-top: 28px;
+    background-color: rgb(128, 182, 219);
+    height: 700%;
+    border: 5px solid rgb(128, 182, 219);
+}
+
+.complectedBody{
+    margin-top: 28px;
+    background-color: rgb(128, 182, 219);
+    height: 700%;
+    border: 5px solid rgb(128, 182, 219);
+}
+
+.buttonBody{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -25px;
+}
+
+.titleBody{
+    width: 100%;
+    align-items: end;
+    display: inline-flex
+}
+.dropDownBody{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+.dropDown{
+    background-color: aliceblue;
+}
+.button{
+    background-color: rgb(196, 196, 227);
+    border-color: rgb(88, 140, 186);
+    border-radius: 25px;
+    font-size: medium;
+}
