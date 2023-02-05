@@ -5,13 +5,13 @@ import Modal from 'react-bootstrap/Modal';
 
 export default function Example(props) {
   
-  const textRef=useRef();
+  const titleRef=useRef();
   const descRef=useRef();
 
   const handleSave=()=>{
-    let text=textRef.current.value
+    let title=titleRef.current.value
     let desc=descRef.current.value  
-    props.setTodoData({text:text,desc:desc})
+    props.setTodoData({title:title,desc:desc,status:'todo',id:props.id})
     setShow(false)
   }
 
@@ -37,7 +37,7 @@ export default function Example(props) {
                 type="text"
                 placeholder="plz enter title"
                 autoFocus
-                ref={textRef}
+                ref={titleRef}
               />
             </Form.Group>
             <Form.Group
