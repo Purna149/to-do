@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-
 export default function Example(props) {
   
   const textRef=useRef();
@@ -11,9 +10,9 @@ export default function Example(props) {
 
   const handleSave=()=>{
     let text=textRef.current.value
-    setShow(false)
     let desc=descRef.current.value  
     props.setTodoData({text:text,desc:desc})
+    setShow(false)
   }
 
   const [show, setShow] = useState(false);
@@ -21,7 +20,7 @@ export default function Example(props) {
   const handleClose = () => setShow(false);
   
   const handleShow = () => {setShow(true)};
-  return (
+    return (
     <>
       <Button variant="primary" onClick={handleShow}>
         Add Task
